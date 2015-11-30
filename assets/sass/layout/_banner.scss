@@ -8,8 +8,18 @@
 
 	#banner {
 		@include padding(8em, 0);
-		background: #f6f6f6;
+		background: transparent;
 		text-align: center;
+		img{
+			max-width: 960px;
+			width:80%;
+			opacity: 1;
+			@include vendor('animation', 'logo-fadein 2s');
+		}
+		@include vendor-keyframes('logo-fadein') {
+			0% { opacity: 0; }
+			100% { opacity: 1; }
+		}
 
 		h2 {
 			font-size: 4em;
@@ -24,11 +34,9 @@
 		}
 
 		@include breakpoint(xlarge) {
-			@include padding(7em, 0);
 		}
 
 		@include breakpoint(large) {
-			@include padding(5em, 0);
 
 			h2 {
 				font-size: 3.5em;
@@ -36,11 +44,9 @@
 		}
 
 		@include breakpoint(medium) {
-			@include padding(6em, 2em);
 		}
 
 		@include breakpoint(small) {
-			@include padding(4em, 2em);
 
 			h2 {
 				font-size: 2.25em;
@@ -52,6 +58,5 @@
 		}
 
 		@include breakpoint(xsmall) {
-			@include padding(4em, 2em);
 		}
 	}

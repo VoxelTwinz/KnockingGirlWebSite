@@ -135,17 +135,25 @@
 			overflow-x: auto;
 		}
 	}
-
+	
 	hr {
 		border: 0;
-		border-bottom: solid _size(border-width) _palette(border);
 		margin: _size(element-margin) 0;
-
+		background-image: url('images/hr.png');
+		background-size: 100% 100%;
+		min-height: 10px;
 		&.major {
 			margin: (_size(element-margin) * 1.5) 0;
 		}
 	}
 
+	.lable{
+		background-image: url("images/lable-bg.png");
+		background-position: center center;
+		background-size: 100% 100%;
+		padding: 20px;
+		text-align: center;
+	}
 	.align-left {
 		text-align: left;
 	}

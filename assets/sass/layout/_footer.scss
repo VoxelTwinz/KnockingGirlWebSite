@@ -5,15 +5,56 @@
 @import '../libs/mixins';
 
 /* Footer */
+	
 
+
+
+	@include vendor-keyframes('footer-fadein') {
+		0% { bottom: -5em; }
+		100% { bottom: 0; }
+	}
+	@include vendor-keyframes('footer-fadeout') {
+		0% { bottom: 0; }
+		100% { bottom: -10em; }
+	}
 	#footer {
-		@include padding(4em, 0);
-		background: #f2f2f2;
+		.row{
+				margin-top: 2.5em;
+		}
+		position: fixed;
+		width: 100%;
+		&.active{
+			@include vendor('animation', 'footer-fadein 1s');
+			
+			bottom: 0px;
+			
+		}
+		&.deactive{
+			@include vendor('animation', 'footer-fadeout 1s');
+
+			bottom: -10em;
+		}
+
+		padding: 2em 2em 0 2em ; 
+		background-image: url('images/footer-bg.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+		
+		a{
+			margin: 0 auto;
+
+			text-align: center;
+			img{
+				display: block;
+				margin: 0 auto;
+				max-width: 180px;
+			}
+		}
 
 		.copyright {
-			color: _palette(fg-light);
+			color: _palette(fg);
 			font-size: 0.9em;
-			margin: 0 0 _size(element-margin) 0;
+			//margin: _size(element-margin)*0.5 0 _size(element-margin)*0.5 0;
 			padding: 0;
 			text-align: center;
 
@@ -31,10 +72,35 @@
 				}
 			}
 		}
-
+		@include breakpoint(medium) {
+			//@include padding(2em, 0);
+			.row{
+				margin-top: 2em;
+			}
+			a{
+				margin: 0 auto;
+				text-align: center;
+				img{
+					display: block;
+					margin: 0 auto;
+					max-width: 150px;
+				}
+			}
+		}
 		@include breakpoint(small) {
-			@include padding(3em, 0);
-
+			//@include padding(2em, 0);
+			.row{
+				margin-top: 1em;
+			}
+			a{
+				margin: 0 auto;
+				text-align: center;
+				img{
+					display: block;
+					margin: 0 auto;
+					max-width: 120px;
+				}
+			}
 			.copyright {
 				li {
 					display: block;
