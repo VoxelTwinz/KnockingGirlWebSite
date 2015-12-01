@@ -13,10 +13,16 @@
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 		<!-- Slider -->
 		<script src="assets/js/jquery.scrollgress.min.js"></script>
-		
+		<script type="text/javascript">
+			
+			$(function() {
+			    console.log( "ready!" );
+			    $('body').addClass('is_loading');
+			});
+		</script>
 	</head>
-	<body>
-
+	<body class="landing">
+		
 		<header id="header" class="active">
 			<div class="row">
 				<img src="images/top_border.png" class="4u active" id="t-l">
@@ -67,7 +73,6 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script type="text/javascript" src="assets/js/jquery.ba-cond.min.js"></script>
-			
 			<script type="text/javascript">
 
 					var $window = $(window);
@@ -76,6 +81,14 @@
 					var $header = $('#header');
 					var $t_r = $('#t-r');
 					var $t_l = $('#t-l');
+					var $body = $('body');
+
+
+					// Disable animations/transitions until the page has loaded.
+					
+						
+					
+
 					// Header.
 					// If the header is using "alt" styling and #banner is present, use scrollwatch
 					// to revert it back to normal styling once the user scrolls past the banner.
@@ -83,6 +96,9 @@
 
 					$window.on('load', function() {
 						
+							window.setTimeout(function() {
+												$body.removeClass('is_loading');
+							}, 0);
 							$banner.scrollwatch({
 								delay:		0,
 								range:		0.5,
