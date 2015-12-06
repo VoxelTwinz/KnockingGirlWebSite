@@ -15,6 +15,11 @@
 	}
 	
 	#header {
+		background-image: url('images/hr.png');
+		background-repeat: no-repeat;
+		background-size:30% auto;
+		background-position: 50% 20%;
+
 		&.active{
 			@include vendor('animation', 'top-border-fadein 2s');
 		}
@@ -25,7 +30,17 @@
 		width: 100%;
 		position: fixed;
 
-
+		div{
+			img{
+				padding:1em;
+				width: 80%;
+				@include breakpoint(small) {
+					padding:0em;
+					width: 100%;
+				}
+			}
+			
+		}
 		#t-l{
 			&.active{
 				@include vendor('animation', 'top-border-fadein-l 2s');
@@ -44,6 +59,10 @@
 				@include vendor('animation', 'top-border-fadeout-r 2s');	
 				right:-10em;
 			}
+			img{
+				@include vendor('transform', 'scaleX(-1)');
+			}
+			text-align: right;
 			position: relative;
 		}
 	}

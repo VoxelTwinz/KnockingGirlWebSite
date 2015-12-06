@@ -1875,8 +1875,8 @@ body.landing:before {
   -webkit-transform-origin: 50% 50%;
   -ms-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
-  color: #444;
-  content: '\f013';
+  color: #663607;
+  content: '\f1ce';
   cursor: default;
   display: block;
   font-size: 5em;
@@ -2165,7 +2165,7 @@ body.landing.is_loading:after {
 /* Type */
 /* line 9, ../sass/base/_typography.scss */
 body, input, select, textarea {
-  color: #444;
+  color: #663607;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13pt;
   font-weight: normal;
@@ -2511,7 +2511,7 @@ input[type="radio"] {
 input[type="checkbox"] + label,
 input[type="radio"] + label {
   text-decoration: none;
-  color: #444;
+  color: #663607;
   cursor: pointer;
   display: inline-block;
   font-size: 1em;
@@ -3095,7 +3095,7 @@ button.disabled,
 button:disabled,
 .button.disabled,
 .button:disabled {
-  background-color: #444 !important;
+  background-color: #663607 !important;
   box-shadow: inset 0 -0.15em 0 0 rgba(0, 0, 0, 0.15);
   color: #fff !important;
   cursor: default;
@@ -3140,17 +3140,21 @@ body {
 
 /* line 17, ../sass/layout/_header.scss */
 #header {
+  background-image: url("images/hr.png");
+  background-repeat: no-repeat;
+  background-size: 30% auto;
+  background-position: 50% 20%;
   width: 100%;
   position: fixed;
 }
-/* line 18, ../sass/layout/_header.scss */
+/* line 23, ../sass/layout/_header.scss */
 #header.active {
   -moz-animation: top-border-fadein 2s;
   -webkit-animation: top-border-fadein 2s;
   -ms-animation: top-border-fadein 2s;
   animation: top-border-fadein 2s;
 }
-/* line 21, ../sass/layout/_header.scss */
+/* line 26, ../sass/layout/_header.scss */
 #header.deactive {
   -moz-animation: top-border-fadeout 2s;
   -webkit-animation: top-border-fadeout 2s;
@@ -3158,18 +3162,30 @@ body {
   animation: top-border-fadeout 2s;
   top: -10em;
 }
-/* line 29, ../sass/layout/_header.scss */
+/* line 34, ../sass/layout/_header.scss */
+#header div img {
+  padding: 1em;
+  width: 80%;
+}
+@media screen and (max-width: 736px) {
+  /* line 34, ../sass/layout/_header.scss */
+  #header div img {
+    padding: 0em;
+    width: 100%;
+  }
+}
+/* line 44, ../sass/layout/_header.scss */
 #header #t-l {
   position: relative;
 }
-/* line 30, ../sass/layout/_header.scss */
+/* line 45, ../sass/layout/_header.scss */
 #header #t-l.active {
   -moz-animation: top-border-fadein-l 2s;
   -webkit-animation: top-border-fadein-l 2s;
   -ms-animation: top-border-fadein-l 2s;
   animation: top-border-fadein-l 2s;
 }
-/* line 33, ../sass/layout/_header.scss */
+/* line 48, ../sass/layout/_header.scss */
 #header #t-l.deactive {
   -moz-animation: top-border-fadeout-l 2s;
   -webkit-animation: top-border-fadeout-l 2s;
@@ -3177,24 +3193,32 @@ body {
   animation: top-border-fadeout-l 2s;
   left: -10em;
 }
-/* line 39, ../sass/layout/_header.scss */
+/* line 54, ../sass/layout/_header.scss */
 #header #t-r {
+  text-align: right;
   position: relative;
 }
-/* line 40, ../sass/layout/_header.scss */
+/* line 55, ../sass/layout/_header.scss */
 #header #t-r.active {
   -moz-animation: top-border-fadein-r 2s;
   -webkit-animation: top-border-fadein-r 2s;
   -ms-animation: top-border-fadein-r 2s;
   animation: top-border-fadein-r 2s;
 }
-/* line 43, ../sass/layout/_header.scss */
+/* line 58, ../sass/layout/_header.scss */
 #header #t-r.deactive {
   -moz-animation: top-border-fadeout-r 2s;
   -webkit-animation: top-border-fadeout-r 2s;
   -ms-animation: top-border-fadeout-r 2s;
   animation: top-border-fadeout-r 2s;
   right: -10em;
+}
+/* line 62, ../sass/layout/_header.scss */
+#header #t-r img {
+  -moz-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
 @-moz-keyframes top-border-fadein {
@@ -3583,16 +3607,28 @@ body {
   padding: 8em 0 6em 0;
   background: transparent;
   text-align: center;
-}
-/* line 13, ../sass/layout/_banner.scss */
-#banner img {
-  max-width: 960px;
-  width: 80%;
-  opacity: 1;
   -moz-animation: logo-fadein 2s;
   -webkit-animation: logo-fadein 2s;
   -ms-animation: logo-fadein 2s;
   animation: logo-fadein 2s;
+}
+/* line 13, ../sass/layout/_banner.scss */
+#banner img {
+  max-width: 960px;
+  width: 60%;
+  opacity: 1;
+  -moz-animation-name: logo-scale;
+  -webkit-animation-name: logo-scale;
+  -ms-animation-name: logo-scale;
+  animation-name: logo-scale;
+  -moz-animation-duration: 0.5;
+  -webkit-animation-duration: 0.5;
+  -ms-animation-duration: 0.5;
+  animation-duration: 0.5;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
 }
 @-moz-keyframes logo-fadein {
   0% {
@@ -3634,30 +3670,100 @@ body {
     opacity: 1;
   }
 }
-/* line 24, ../sass/layout/_banner.scss */
+@-moz-keyframes logo-scale {
+  0% {
+    -moz-transform: scaleX(1.00) scaleY(1.00);
+    -webkit-transform: scaleX(1.00) scaleY(1.00);
+    -ms-transform: scaleX(1.00) scaleY(1.00);
+    transform: scaleX(1.00) scaleY(1.00);
+  }
+  100% {
+    -moz-transform: scaleX(1.20) scaleY(1.20);
+    -webkit-transform: scaleX(1.20) scaleY(1.20);
+    -ms-transform: scaleX(1.20) scaleY(1.20);
+    transform: scaleX(1.20) scaleY(1.20);
+  }
+}
+@-webkit-keyframes logo-scale {
+  0% {
+    -moz-transform: scaleX(1.00) scaleY(1.00);
+    -webkit-transform: scaleX(1.00) scaleY(1.00);
+    -ms-transform: scaleX(1.00) scaleY(1.00);
+    transform: scaleX(1.00) scaleY(1.00);
+  }
+  100% {
+    -moz-transform: scaleX(1.20) scaleY(1.20);
+    -webkit-transform: scaleX(1.20) scaleY(1.20);
+    -ms-transform: scaleX(1.20) scaleY(1.20);
+    transform: scaleX(1.20) scaleY(1.20);
+  }
+}
+@-o-keyframes logo-scale {
+  0% {
+    -moz-transform: scaleX(1.00) scaleY(1.00);
+    -webkit-transform: scaleX(1.00) scaleY(1.00);
+    -ms-transform: scaleX(1.00) scaleY(1.00);
+    transform: scaleX(1.00) scaleY(1.00);
+  }
+  100% {
+    -moz-transform: scaleX(1.20) scaleY(1.20);
+    -webkit-transform: scaleX(1.20) scaleY(1.20);
+    -ms-transform: scaleX(1.20) scaleY(1.20);
+    transform: scaleX(1.20) scaleY(1.20);
+  }
+}
+@-ms-keyframes logo-scale {
+  0% {
+    -moz-transform: scaleX(1.00) scaleY(1.00);
+    -webkit-transform: scaleX(1.00) scaleY(1.00);
+    -ms-transform: scaleX(1.00) scaleY(1.00);
+    transform: scaleX(1.00) scaleY(1.00);
+  }
+  100% {
+    -moz-transform: scaleX(1.20) scaleY(1.20);
+    -webkit-transform: scaleX(1.20) scaleY(1.20);
+    -ms-transform: scaleX(1.20) scaleY(1.20);
+    transform: scaleX(1.20) scaleY(1.20);
+  }
+}
+@keyframes logo-scale {
+  0% {
+    -moz-transform: scaleX(1.00) scaleY(1.00);
+    -webkit-transform: scaleX(1.00) scaleY(1.00);
+    -ms-transform: scaleX(1.00) scaleY(1.00);
+    transform: scaleX(1.00) scaleY(1.00);
+  }
+  100% {
+    -moz-transform: scaleX(1.20) scaleY(1.20);
+    -webkit-transform: scaleX(1.20) scaleY(1.20);
+    -ms-transform: scaleX(1.20) scaleY(1.20);
+    transform: scaleX(1.20) scaleY(1.20);
+  }
+}
+/* line 34, ../sass/layout/_banner.scss */
 #banner h2 {
   font-size: 4em;
   line-height: 1em;
   margin: 0 0 0.5em 0;
   padding: 0;
 }
-/* line 31, ../sass/layout/_banner.scss */
+/* line 41, ../sass/layout/_banner.scss */
 #banner p {
   font-size: 1.5em;
   margin-bottom: 1.75em;
 }
 @media screen and (max-width: 1280px) {
-  /* line 41, ../sass/layout/_banner.scss */
+  /* line 51, ../sass/layout/_banner.scss */
   #banner h2 {
     font-size: 3.5em;
   }
 }
 @media screen and (max-width: 736px) {
-  /* line 51, ../sass/layout/_banner.scss */
+  /* line 61, ../sass/layout/_banner.scss */
   #banner h2 {
     font-size: 2.25em;
   }
-  /* line 55, ../sass/layout/_banner.scss */
+  /* line 65, ../sass/layout/_banner.scss */
   #banner p {
     font-size: 1.25em;
   }
@@ -3796,7 +3902,7 @@ Main
 }
 /* line 54, ../sass/layout/_footer.scss */
 #footer .copyright {
-  color: #444;
+  color: #663607;
   font-size: 0.9em;
   padding: 0;
   text-align: center;

@@ -12,13 +12,23 @@
 		text-align: center;
 		img{
 			max-width: 960px;
-			width:80%;
+			width:60%;
 			opacity: 1;
-			@include vendor('animation', 'logo-fadein 2s');
+			@include vendor('animation-name', 'logo-scale');
+			@include vendor('animation-duration', '0.5');
+			@include vendor('animation-iteration-count', 'infinite');
+
 		}
+		@include vendor('animation', 'logo-fadein 2s');
+
 		@include vendor-keyframes('logo-fadein') {
 			0% { opacity: 0; }
 			100% { opacity: 1; }
+		}
+		
+		@include vendor-keyframes('logo-scale') {
+			0% { @include vendor('transform','scaleX(1.00) scaleY(1.00)') }
+			100% { @include vendor('transform','scaleX(1.20) scaleY(1.20)')  }
 		}
 
 		h2 {
