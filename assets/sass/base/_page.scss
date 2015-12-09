@@ -45,8 +45,7 @@
 			&:before {
 				@include vendor('animation', 'spinner-show 1.5s 1 0.25s ease forwards, spinner-hide 0.25s ease-in-out forwards !important');
 				@include vendor('transform-origin', '50% 50%');
-
-				color: _palette(fg); 
+				color: _palette(fg-loading); 
 				content: '\f1ce';
 				cursor: default;
 				display: block;
@@ -67,7 +66,7 @@
 
 			&:after {
 				@include vendor('animation', 'overlay-hide #{$duration-landing-fadein} ease-in forwards !important');
-				background-image: url('images/bg.jpg');
+				background-image: url('images/bg_loading.png');
 				background-repeat: repeat;
 				content: '';
 				display: block;

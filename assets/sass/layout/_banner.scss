@@ -57,6 +57,9 @@
 		}
 
 		@include breakpoint(small) {
+			img{
+				width: 90%;
+			}
 
 			h2 {
 				font-size: 2.25em;

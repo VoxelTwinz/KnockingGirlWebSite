@@ -1,0 +1,38 @@
+// skel-baseline v3.0.0 | (c) n33 | skel.io | MIT licensed
+
+@import '../libs/vars';
+@import '../libs/functions';
+@import '../libs/mixins';
+
+/* Banner */
+
+	#award {
+		background-image: url('images/Awards_Bar.png');
+		background-repeat: repeat-y;
+		background-size: 100% auto;
+		background-position: center;
+		.row{
+			padding: 0 5em; 
+		}
+		li{
+			list-style-type: none;
+			img{
+				width: 100%;
+			}
+		}
+		
+
+		@include breakpoint(xlarge) {
+		}
+
+
+		@include breakpoint(medium) {
+		}
+
+		@include breakpoint(small) {
+
+		}
+
+		@include breakpoint(xsmall) {
+		}
+	}
