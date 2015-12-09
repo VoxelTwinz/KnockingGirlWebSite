@@ -3617,18 +3617,10 @@ body {
   max-width: 960px;
   width: 60%;
   opacity: 1;
-  -moz-animation-name: logo-scale;
-  -webkit-animation-name: logo-scale;
-  -ms-animation-name: logo-scale;
-  animation-name: logo-scale;
-  -moz-animation-duration: 0.5;
-  -webkit-animation-duration: 0.5;
-  -ms-animation-duration: 0.5;
-  animation-duration: 0.5;
-  -moz-animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
-  -ms-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
+  -moz-animation: logo-scale 0.5s cubic-bezier(.23,1,.32,1) 0s infinite alternate;
+  -webkit-animation: logo-scale 0.5s cubic-bezier(.23,1,.32,1) 0s infinite alternate;
+  -ms-animation: logo-scale 0.5s cubic-bezier(.23,1,.32,1) 0s infinite alternate;
+  animation: logo-scale 0.5s cubic-bezier(.23,1,.32,1) 0s infinite alternate;
 }
 @-moz-keyframes logo-fadein {
   0% {
@@ -3672,102 +3664,132 @@ body {
 }
 @-moz-keyframes logo-scale {
   0% {
-    -moz-transform: scaleX(1.00) scaleY(1.00);
-    -webkit-transform: scaleX(1.00) scaleY(1.00);
-    -ms-transform: scaleX(1.00) scaleY(1.00);
-    transform: scaleX(1.00) scaleY(1.00);
+    -moz-transform: scaleX(1) scaleY(1);
+    -webkit-transform: scaleX(1) scaleY(1);
+    -ms-transform: scaleX(1) scaleY(1);
+    transform: scaleX(1) scaleY(1);
+  }
+  96% {
+    -moz-transform: scaleX(0.9) scaleY(0.9);
+    -webkit-transform: scaleX(0.9) scaleY(0.9);
+    -ms-transform: scaleX(0.9) scaleY(0.9);
+    transform: scaleX(0.9) scaleY(0.9);
   }
   100% {
-    -moz-transform: scaleX(1.20) scaleY(1.20);
-    -webkit-transform: scaleX(1.20) scaleY(1.20);
-    -ms-transform: scaleX(1.20) scaleY(1.20);
-    transform: scaleX(1.20) scaleY(1.20);
+    -moz-transform: scaleX(0.9) scaleY(0.9);
+    -webkit-transform: scaleX(0.9) scaleY(0.9);
+    -ms-transform: scaleX(0.9) scaleY(0.9);
+    transform: scaleX(0.9) scaleY(0.9);
   }
 }
 @-webkit-keyframes logo-scale {
   0% {
-    -moz-transform: scaleX(1.00) scaleY(1.00);
-    -webkit-transform: scaleX(1.00) scaleY(1.00);
-    -ms-transform: scaleX(1.00) scaleY(1.00);
-    transform: scaleX(1.00) scaleY(1.00);
+    -moz-transform: scaleX(1) scaleY(1);
+    -webkit-transform: scaleX(1) scaleY(1);
+    -ms-transform: scaleX(1) scaleY(1);
+    transform: scaleX(1) scaleY(1);
+  }
+  96% {
+    -moz-transform: scaleX(0.9) scaleY(0.9);
+    -webkit-transform: scaleX(0.9) scaleY(0.9);
+    -ms-transform: scaleX(0.9) scaleY(0.9);
+    transform: scaleX(0.9) scaleY(0.9);
   }
   100% {
-    -moz-transform: scaleX(1.20) scaleY(1.20);
-    -webkit-transform: scaleX(1.20) scaleY(1.20);
-    -ms-transform: scaleX(1.20) scaleY(1.20);
-    transform: scaleX(1.20) scaleY(1.20);
+    -moz-transform: scaleX(0.9) scaleY(0.9);
+    -webkit-transform: scaleX(0.9) scaleY(0.9);
+    -ms-transform: scaleX(0.9) scaleY(0.9);
+    transform: scaleX(0.9) scaleY(0.9);
   }
 }
 @-o-keyframes logo-scale {
   0% {
-    -moz-transform: scaleX(1.00) scaleY(1.00);
-    -webkit-transform: scaleX(1.00) scaleY(1.00);
-    -ms-transform: scaleX(1.00) scaleY(1.00);
-    transform: scaleX(1.00) scaleY(1.00);
+    -moz-transform: scaleX(1) scaleY(1);
+    -webkit-transform: scaleX(1) scaleY(1);
+    -ms-transform: scaleX(1) scaleY(1);
+    transform: scaleX(1) scaleY(1);
+  }
+  96% {
+    -moz-transform: scaleX(0.9) scaleY(0.9);
+    -webkit-transform: scaleX(0.9) scaleY(0.9);
+    -ms-transform: scaleX(0.9) scaleY(0.9);
+    transform: scaleX(0.9) scaleY(0.9);
   }
   100% {
-    -moz-transform: scaleX(1.20) scaleY(1.20);
-    -webkit-transform: scaleX(1.20) scaleY(1.20);
-    -ms-transform: scaleX(1.20) scaleY(1.20);
-    transform: scaleX(1.20) scaleY(1.20);
+    -moz-transform: scaleX(0.9) scaleY(0.9);
+    -webkit-transform: scaleX(0.9) scaleY(0.9);
+    -ms-transform: scaleX(0.9) scaleY(0.9);
+    transform: scaleX(0.9) scaleY(0.9);
   }
 }
 @-ms-keyframes logo-scale {
   0% {
-    -moz-transform: scaleX(1.00) scaleY(1.00);
-    -webkit-transform: scaleX(1.00) scaleY(1.00);
-    -ms-transform: scaleX(1.00) scaleY(1.00);
-    transform: scaleX(1.00) scaleY(1.00);
+    -moz-transform: scaleX(1) scaleY(1);
+    -webkit-transform: scaleX(1) scaleY(1);
+    -ms-transform: scaleX(1) scaleY(1);
+    transform: scaleX(1) scaleY(1);
+  }
+  96% {
+    -moz-transform: scaleX(0.9) scaleY(0.9);
+    -webkit-transform: scaleX(0.9) scaleY(0.9);
+    -ms-transform: scaleX(0.9) scaleY(0.9);
+    transform: scaleX(0.9) scaleY(0.9);
   }
   100% {
-    -moz-transform: scaleX(1.20) scaleY(1.20);
-    -webkit-transform: scaleX(1.20) scaleY(1.20);
-    -ms-transform: scaleX(1.20) scaleY(1.20);
-    transform: scaleX(1.20) scaleY(1.20);
+    -moz-transform: scaleX(0.9) scaleY(0.9);
+    -webkit-transform: scaleX(0.9) scaleY(0.9);
+    -ms-transform: scaleX(0.9) scaleY(0.9);
+    transform: scaleX(0.9) scaleY(0.9);
   }
 }
 @keyframes logo-scale {
   0% {
-    -moz-transform: scaleX(1.00) scaleY(1.00);
-    -webkit-transform: scaleX(1.00) scaleY(1.00);
-    -ms-transform: scaleX(1.00) scaleY(1.00);
-    transform: scaleX(1.00) scaleY(1.00);
+    -moz-transform: scaleX(1) scaleY(1);
+    -webkit-transform: scaleX(1) scaleY(1);
+    -ms-transform: scaleX(1) scaleY(1);
+    transform: scaleX(1) scaleY(1);
+  }
+  96% {
+    -moz-transform: scaleX(0.9) scaleY(0.9);
+    -webkit-transform: scaleX(0.9) scaleY(0.9);
+    -ms-transform: scaleX(0.9) scaleY(0.9);
+    transform: scaleX(0.9) scaleY(0.9);
   }
   100% {
-    -moz-transform: scaleX(1.20) scaleY(1.20);
-    -webkit-transform: scaleX(1.20) scaleY(1.20);
-    -ms-transform: scaleX(1.20) scaleY(1.20);
-    transform: scaleX(1.20) scaleY(1.20);
+    -moz-transform: scaleX(0.9) scaleY(0.9);
+    -webkit-transform: scaleX(0.9) scaleY(0.9);
+    -ms-transform: scaleX(0.9) scaleY(0.9);
+    transform: scaleX(0.9) scaleY(0.9);
   }
 }
-/* line 34, ../sass/layout/_banner.scss */
+/* line 32, ../sass/layout/_banner.scss */
 #banner h2 {
   font-size: 4em;
   line-height: 1em;
   margin: 0 0 0.5em 0;
   padding: 0;
 }
-/* line 41, ../sass/layout/_banner.scss */
+/* line 39, ../sass/layout/_banner.scss */
 #banner p {
   font-size: 1.5em;
   margin-bottom: 1.75em;
 }
 @media screen and (max-width: 1280px) {
-  /* line 51, ../sass/layout/_banner.scss */
+  /* line 49, ../sass/layout/_banner.scss */
   #banner h2 {
     font-size: 3.5em;
   }
 }
 @media screen and (max-width: 736px) {
-  /* line 60, ../sass/layout/_banner.scss */
+  /* line 58, ../sass/layout/_banner.scss */
   #banner img {
     width: 90%;
   }
-  /* line 64, ../sass/layout/_banner.scss */
+  /* line 62, ../sass/layout/_banner.scss */
   #banner h2 {
     font-size: 2.25em;
   }
-  /* line 68, ../sass/layout/_banner.scss */
+  /* line 66, ../sass/layout/_banner.scss */
   #banner p {
     font-size: 1.25em;
   }

@@ -14,10 +14,7 @@
 			max-width: 960px;
 			width:60%;
 			opacity: 1;
-			@include vendor('animation-name', 'logo-scale');
-			@include vendor('animation-duration', '0.5');
-			@include vendor('animation-iteration-count', 'infinite');
-
+			@include vendor('animation', 'logo-scale 0.5s cubic-bezier(.23,1,.32,1) 0s infinite alternate');
 		}
 		@include vendor('animation', 'logo-fadein 2s');
 
@@ -27,8 +24,9 @@
 		}
 		
 		@include vendor-keyframes('logo-scale') {
-			0% { @include vendor('transform','scaleX(1.00) scaleY(1.00)') }
-			100% { @include vendor('transform','scaleX(1.20) scaleY(1.20)')  }
+			0% { @include vendor('transform','scaleX(1) scaleY(1)') }
+			96% { @include vendor('transform','scaleX(0.9) scaleY(0.9)')  }
+			100% { @include vendor('transform','scaleX(0.9) scaleY(0.9)')  }
 		}
 
 		h2 {

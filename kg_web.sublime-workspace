@@ -4,8 +4,32 @@
 		"selected_items":
 		[
 			[
+				"padd",
+				"padding"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"u",
+				"ul	Tag"
+			],
+			[
 				"back",
 				"background-position"
+			],
+			[
+				"bar",
+				"background-size"
+			],
+			[
+				"re",
+				"repeat-y"
+			],
+			[
+				"bka",
+				"background-image"
 			],
 			[
 				"bakc",
@@ -18,10 +42,6 @@
 			[
 				"mar",
 				"margin"
-			],
-			[
-				"padd",
-				"padding-right"
 			],
 			[
 				"i",
@@ -54,10 +74,6 @@
 			[
 				"paddin",
 				"padding-top"
-			],
-			[
-				"re",
-				"repeat"
 			],
 			[
 				"font",
@@ -94,10 +110,6 @@
 			[
 				"f",
 				"fixed"
-			],
-			[
-				"max",
-				"max-width"
 			]
 		]
 	},
@@ -107,15 +119,23 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 4255,
+				"buffer_size": 4989,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "assets/sass/layout/_header.scss",
+			"file": "assets/sass/layout/_footer.scss",
 			"settings":
 			{
-				"buffer_size": 1910,
+				"buffer_size": 1858,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/sass/layout/_award.scss",
+			"settings":
+			{
+				"buffer_size": 592,
 				"line_ending": "Windows"
 			}
 		},
@@ -123,15 +143,7 @@
 			"file": "assets/sass/layout/_banner.scss",
 			"settings":
 			{
-				"buffer_size": 1243,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "assets/sass/libs/_vars.scss",
-			"settings":
-			{
-				"buffer_size": 1356,
+				"buffer_size": 1272,
 				"line_ending": "Windows"
 			}
 		}
@@ -177,12 +189,23 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/Miki_Air/Documents/KnockingGirlWebSite"
+		"/Users/Miki_Air/Documents/KnockingGirlWebSite",
+		"/Users/Miki_Air/Documents/KnockingGirlWebSite/assets",
+		"/Users/Miki_Air/Documents/KnockingGirlWebSite/assets/sass",
+		"/Users/Miki_Air/Documents/KnockingGirlWebSite/assets/sass/base",
+		"/Users/Miki_Air/Documents/KnockingGirlWebSite/assets/sass/layout",
+		"/Users/Miki_Air/Documents/KnockingGirlWebSite/assets/sass/libs"
 	],
 	"file_history":
 	[
+		"/Users/Miki_Air/Downloads/baseline-master/index.html",
+		"/Users/Miki_Air/Documents/KnockingGirlWebSite/assets/sass/main.scss",
+		"/Users/Miki_Air/Documents/KnockingGirlWebSite/assets/sass/libs/_vars.scss",
+		"/Users/Miki_Air/Documents/KnockingGirlWebSite/assets/sass/layout/_header.scss",
 		"/Users/Miki_Air/Documents/KnockingGirlWebSite/assets/sass/base/_page.scss",
+		"/Users/Miki_Air/Documents/KnockingGirlWebSite/index.html",
 		"/Users/Miki_Air/Documents/KnockingGirlWebSite/assets/sass/base/_typography.scss",
+		"/Users/Miki_Air/Documents/KnockingGirlWebSite/assets/sass/layout/_banner.scss",
 		"/Users/Miki_Air/Documents/e758_Casino_Web/.gitignore",
 		"/Users/Miki_Air/Desktop/baseline-master/assets/sass/libs/_vars.scss",
 		"/Users/Miki_Air/Desktop/baseline-master/assets/sass/base/_typography.scss",
@@ -190,7 +213,6 @@
 		"/Users/Miki_Air/Desktop/baseline-master/assets/sass/layout/_header.scss",
 		"/Users/Miki_Air/Desktop/baseline-master/assets/sass/layout/_main.scss",
 		"/Users/Miki_Air/Downloads/baseline-master/README.md",
-		"/Users/Miki_Air/Downloads/baseline-master/index.html",
 		"/Users/Miki_Air/Desktop/baseline-master/assets/sass/layout/_banner.scss",
 		"/Users/Miki_Air/Desktop/baseline-master/assets/sass/layout/_footer.scss",
 		"/Users/Miki_Air/Desktop/baseline-master/assets/sass/layout/_nav.scss",
@@ -203,17 +225,13 @@
 		"/Users/Miki_Air/Desktop/baseline-master/assets/sass/libs/_mixins.scss",
 		"/Users/Miki_Air/Desktop/baseline-master/assets/sass/libs/_functions.scss",
 		"/Users/Miki_Air/Documents/KnockingGirlWebSite/assets/css/main.css",
-		"/Users/Miki_Air/Documents/KnockingGirlWebSite/index.html",
 		"/Users/Miki_Air/Documents/KnockingGirlWebSite/assets/sass/layout/_footer.scss",
-		"/Users/Miki_Air/Documents/KnockingGirlWebSite/assets/sass/layout/_banner.scss",
-		"/Users/Miki_Air/Documents/KnockingGirlWebSite/assets/sass/layout/_header.scss",
 		"/Users/Miki_Air/Downloads/baseline-master/assets/sass/layout/_banner.scss",
 		"/Users/Miki_Air/Downloads/baseline-master/assets/css/main.css",
 		"/Volumes/NO NAME/Cyber_web/sass/style.scss",
 		"/Volumes/NO NAME/Cyber_web/js/init.js",
 		"/Volumes/NO NAME/Cyber_web/_head.html.erb",
 		"/Volumes/NO NAME/Cyber_web/index.html.erb",
-		"/Users/Miki_Air/Documents/KnockingGirlWebSite/assets/sass/libs/_vars.scss",
 		"/Volumes/NO NAME/Cyber_web/sass/_vars.scss",
 		"/Users/Miki_Air/Documents/KnockingGirlWebSite/.gitignore",
 		"/Volumes/NO NAME/stone_web/sass/_mixins.scss",
@@ -226,7 +244,6 @@
 		"/Users/Miki_Air/Documents/KnockingGirlWebSite/assets/sass/libs/_mixins.scss",
 		"/Users/Miki_Air/Documents/KnockingGirlWebSite/assets/sass/libs/_functions.scss",
 		"/Users/Miki_Air/Documents/KnockingGirlWebSite/assets/sass/layout/_main.scss",
-		"/Users/Miki_Air/Documents/KnockingGirlWebSite/assets/sass/main.scss",
 		"/Users/Miki_Air/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Users/Miki_Air/Documents/KnockingGirlWebSite/assets/sass/layout/_nav.scss",
 		"/Users/Miki_Air/Documents/KnockingGirlWebSite/assets/css/slider_style.css",
@@ -296,7 +313,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -305,15 +322,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4255,
+						"buffer_size": 4989,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								814,
-								814
+								2906,
+								2906
 							]
 						],
 						"settings":
@@ -322,27 +339,27 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 136.0,
+						"translation.y": 1168.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "assets/sass/layout/_header.scss",
+					"file": "assets/sass/layout/_footer.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1910,
+						"buffer_size": 1858,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								755,
-								755
+								359,
+								359
 							]
 						],
 						"settings":
@@ -351,27 +368,27 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 736.0,
+						"translation.y": 976.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "assets/sass/layout/_banner.scss",
+					"file": "assets/sass/layout/_award.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1243,
+						"buffer_size": 592,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1098,
-								1126
+								443,
+								443
 							]
 						],
 						"settings":
@@ -379,8 +396,8 @@
 							"syntax": "Packages/SCSS/SCSS.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": -0.0,
-						"translation.y": 436.0,
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -388,19 +405,19 @@
 				},
 				{
 					"buffer": 3,
-					"file": "assets/sass/libs/_vars.scss",
+					"file": "assets/sass/layout/_banner.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1356,
+						"buffer_size": 1272,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								579,
-								579
+								1150,
+								1150
 							]
 						],
 						"settings":
@@ -408,8 +425,8 @@
 							"syntax": "Packages/SCSS/SCSS.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": -0.0,
-						"translation.y": 262.0,
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
@@ -495,7 +512,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 150.0,
+	"side_bar_width": 225.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
