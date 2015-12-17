@@ -3128,10 +3128,10 @@ body {
   background-image: url("images/bg.png");
   background-repeat: repeat;
   background-attachment: fixed;
-  -moz-animation: bg-move 30s linear 0s infinite alternate;
-  -webkit-animation: bg-move 30s linear 0s infinite alternate;
-  -ms-animation: bg-move 30s linear 0s infinite alternate;
-  animation: bg-move 30s linear 0s infinite alternate;
+  -moz-animation: bg-move 90s linear 0s infinite normal;
+  -webkit-animation: bg-move 90s linear 0s infinite normal;
+  -ms-animation: bg-move 90s linear 0s infinite normal;
+  animation: bg-move 90s linear 0s infinite normal;
 }
 
 @-moz-keyframes bg-move {
