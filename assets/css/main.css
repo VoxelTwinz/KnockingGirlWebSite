@@ -1822,37 +1822,7 @@ body {
   }
 }
 /* Basic */
-@-ms-viewport {
-  width: device-width;
-}
-/* line 15, ../sass/base/_page.scss */
-body {
-  -ms-overflow-style: scrollbar;
-}
-
-@media screen and (max-width: 480px) {
-  /* line 21, ../sass/base/_page.scss */
-  html, body {
-    min-width: 320px;
-  }
-}
-/* line 26, ../sass/base/_page.scss */
-body {
-  background: #fff;
-}
-/* line 32, ../sass/base/_page.scss */
-body.is-loading *, body.is-loading *:before, body.is-loading *:after {
-  -moz-animation: none !important;
-  -webkit-animation: none !important;
-  -ms-animation: none !important;
-  animation: none !important;
-  -moz-transition: none !important;
-  -webkit-transition: none !important;
-  -ms-transition: none !important;
-  transition: none !important;
-}
-
-/* line 40, ../sass/base/_page.scss */
+/* line 8, ../sass/base/_page.scss */
 body.landing {
   text-decoration: none;
 }
@@ -1865,7 +1835,7 @@ body.landing:before {
   font-weight: normal;
   text-transform: none !important;
 }
-/* line 45, ../sass/base/_page.scss */
+/* line 13, ../sass/base/_page.scss */
 body.landing:before {
   -moz-animation: spinner-show 1.5s 1 0.25s ease forwards, spinner-hide 0.25s ease-in-out forwards !important;
   -webkit-animation: spinner-show 1.5s 1 0.25s ease forwards, spinner-hide 0.25s ease-in-out forwards !important;
@@ -1891,7 +1861,7 @@ body.landing:before {
   width: 2em;
   z-index: -1;
 }
-/* line 67, ../sass/base/_page.scss */
+/* line 35, ../sass/base/_page.scss */
 body.landing:after {
   -moz-animation: overlay-hide 1.5s ease-in forwards !important;
   -webkit-animation: overlay-hide 1.5s ease-in forwards !important;
@@ -1909,7 +1879,7 @@ body.landing:after {
   width: 100%;
   z-index: -1;
 }
-/* line 86, ../sass/base/_page.scss */
+/* line 54, ../sass/base/_page.scss */
 body.landing.is_loading:before {
   -moz-animation: spinner-show 1.5s 1 0.25s ease forwards, spinner-rotate 0.75s infinite linear !important;
   -webkit-animation: spinner-show 1.5s 1 0.25s ease forwards, spinner-rotate 0.75s infinite linear !important;
@@ -1917,7 +1887,7 @@ body.landing.is_loading:before {
   animation: spinner-show 1.5s 1 0.25s ease forwards, spinner-rotate 0.75s infinite linear !important;
   z-index: 100001;
 }
-/* line 93, ../sass/base/_page.scss */
+/* line 61, ../sass/base/_page.scss */
 body.landing.is_loading:after {
   -moz-animation: none !important;
   -webkit-animation: none !important;
@@ -1925,6 +1895,36 @@ body.landing.is_loading:after {
   animation: none !important;
   opacity: 1;
   z-index: 100000;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+/* line 76, ../sass/base/_page.scss */
+body {
+  -ms-overflow-style: scrollbar;
+}
+
+@media screen and (max-width: 480px) {
+  /* line 82, ../sass/base/_page.scss */
+  html, body {
+    min-width: 320px;
+  }
+}
+/* line 87, ../sass/base/_page.scss */
+body {
+  background: #fff;
+}
+/* line 93, ../sass/base/_page.scss */
+body.is-loading *, body.is-loading *:before, body.is-loading *:after {
+  -moz-animation: none !important;
+  -webkit-animation: none !important;
+  -ms-animation: none !important;
+  animation: none !important;
+  -moz-transition: none !important;
+  -webkit-transition: none !important;
+  -ms-transition: none !important;
+  transition: none !important;
 }
 
 @-moz-keyframes spinner-show {
@@ -2332,26 +2332,17 @@ hr.major {
   margin: 3em 0;
 }
 
-/* line 150, ../sass/base/_typography.scss */
-.lable {
-  background-image: url("images/lable-bg.png");
-  background-position: center center;
-  background-size: 100% 100%;
-  padding: 20px;
-  text-align: center;
-}
-
-/* line 157, ../sass/base/_typography.scss */
+/* line 151, ../sass/base/_typography.scss */
 .align-left {
   text-align: left;
 }
 
-/* line 161, ../sass/base/_typography.scss */
+/* line 155, ../sass/base/_typography.scss */
 .align-center {
   text-align: center;
 }
 
-/* line 165, ../sass/base/_typography.scss */
+/* line 159, ../sass/base/_typography.scss */
 .align-right {
   text-align: right;
 }
@@ -3112,6 +3103,7 @@ button:disabled,
   }
 }
 
+/* Lable */
 /* Grid Demo */
 /* line 9, ../sass/components/_grid-demo.scss */
 .grid-demo {
@@ -3136,9 +3128,53 @@ body {
   background-image: url("images/bg.png");
   background-repeat: repeat;
   background-attachment: fixed;
+  -moz-animation: bg-move 30s linear 0s infinite alternate;
+  -webkit-animation: bg-move 30s linear 0s infinite alternate;
+  -ms-animation: bg-move 30s linear 0s infinite alternate;
+  animation: bg-move 30s linear 0s infinite alternate;
 }
 
-/* line 17, ../sass/layout/_header.scss */
+@-moz-keyframes bg-move {
+  0% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+@-webkit-keyframes bg-move {
+  0% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+@-o-keyframes bg-move {
+  0% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+@-ms-keyframes bg-move {
+  0% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+@keyframes bg-move {
+  0% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+/* line 23, ../sass/layout/_header.scss */
 #header {
   background-image: url("images/hr.png");
   background-repeat: no-repeat;
@@ -3147,14 +3183,14 @@ body {
   width: 100%;
   position: fixed;
 }
-/* line 23, ../sass/layout/_header.scss */
+/* line 29, ../sass/layout/_header.scss */
 #header.active {
   -moz-animation: top-border-fadein 2s;
   -webkit-animation: top-border-fadein 2s;
   -ms-animation: top-border-fadein 2s;
   animation: top-border-fadein 2s;
 }
-/* line 26, ../sass/layout/_header.scss */
+/* line 32, ../sass/layout/_header.scss */
 #header.deactive {
   -moz-animation: top-border-fadeout 2s;
   -webkit-animation: top-border-fadeout 2s;
@@ -3162,30 +3198,30 @@ body {
   animation: top-border-fadeout 2s;
   top: -10em;
 }
-/* line 34, ../sass/layout/_header.scss */
+/* line 40, ../sass/layout/_header.scss */
 #header div img {
   padding: 1em;
   width: 80%;
 }
 @media screen and (max-width: 736px) {
-  /* line 34, ../sass/layout/_header.scss */
+  /* line 40, ../sass/layout/_header.scss */
   #header div img {
     padding: 0em;
     width: 100%;
   }
 }
-/* line 44, ../sass/layout/_header.scss */
+/* line 50, ../sass/layout/_header.scss */
 #header #t-l {
   position: relative;
 }
-/* line 45, ../sass/layout/_header.scss */
+/* line 51, ../sass/layout/_header.scss */
 #header #t-l.active {
   -moz-animation: top-border-fadein-l 2s;
   -webkit-animation: top-border-fadein-l 2s;
   -ms-animation: top-border-fadein-l 2s;
   animation: top-border-fadein-l 2s;
 }
-/* line 48, ../sass/layout/_header.scss */
+/* line 54, ../sass/layout/_header.scss */
 #header #t-l.deactive {
   -moz-animation: top-border-fadeout-l 2s;
   -webkit-animation: top-border-fadeout-l 2s;
@@ -3193,19 +3229,19 @@ body {
   animation: top-border-fadeout-l 2s;
   left: -10em;
 }
-/* line 54, ../sass/layout/_header.scss */
+/* line 60, ../sass/layout/_header.scss */
 #header #t-r {
   text-align: right;
   position: relative;
 }
-/* line 55, ../sass/layout/_header.scss */
+/* line 61, ../sass/layout/_header.scss */
 #header #t-r.active {
   -moz-animation: top-border-fadein-r 2s;
   -webkit-animation: top-border-fadein-r 2s;
   -ms-animation: top-border-fadein-r 2s;
   animation: top-border-fadein-r 2s;
 }
-/* line 58, ../sass/layout/_header.scss */
+/* line 64, ../sass/layout/_header.scss */
 #header #t-r.deactive {
   -moz-animation: top-border-fadeout-r 2s;
   -webkit-animation: top-border-fadeout-r 2s;
@@ -3213,7 +3249,7 @@ body {
   animation: top-border-fadeout-r 2s;
   right: -10em;
 }
-/* line 62, ../sass/layout/_header.scss */
+/* line 68, ../sass/layout/_header.scss */
 #header #t-r img {
   -moz-transform: scaleX(-1);
   -webkit-transform: scaleX(-1);

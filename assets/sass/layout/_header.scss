@@ -11,7 +11,13 @@
 		background-image: url("images/bg.png");
 		background-repeat: repeat;
 		background-attachment: fixed;
+		@include vendor('animation', 'bg-move 30s linear 0s infinite alternate');
 
+	}
+
+	@include vendor-keyframes('bg-move') {
+		0% { background-position: 100% 100%; }
+		100% { background-position: 0 0;}
 	}
 	
 	#header {
