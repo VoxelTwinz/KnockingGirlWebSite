@@ -7,25 +7,29 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 		<link rel="shortcut icon" href="images/icon.ico"> 
-
 		<link rel="stylesheet" href="assets/css/main.css" />
 
-		<link rel="stylesheet" href="assets/css/jcarousel.responsive.css" />
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-		<script type="text/javascript" src="assets/js/jquery.jcarousel.min.js"></script>
-		<script type="text/javascript" src="assets/js/jcarousel.responsive.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js" type="text/javascript"></script>
 		<script type="text/javascript" src="assets/js/jquery.cycle.lite.js"></script>
-
-
-		<!-- Slider -->
 		<script src="assets/js/jquery.scrollgress.min.js"></script>
 		<script type="text/javascript">
-			
 			$(function() {
 			    console.log( "ready!" );
 			    $('body').addClass('is_loading');
 			});
 		</script>
+
+		<!-- 
+		<link rel="stylesheet" href="assets/css/jcarousel.responsive.css" />
+		<script type="text/javascript" src="assets/js/jquery.jcarousel.min.js"></script>
+		<script type="text/javascript" src="assets/js/jcarousel.responsive.js"></script>
+		 -->
+
+		<!-- Slider -->
+      <link href="assets/css/jquery.carousel.css" rel="stylesheet" type="text/css">
+      <script src="assets/js/jquery.carousel.js" type="text/javascript"></script>
+      <script src="assets/js/jquery.carousel.timer.js" type="text/javascript"></script>
+
 	</head>
 	<body class="landing is_loading">
 		
@@ -102,7 +106,7 @@
 
 			<hr>
 
-
+<!-- 
 			<div class="jcarousel-wrapper">
                 <div class="jcarousel">
                     <ul>
@@ -115,17 +119,48 @@
                         <li><img src="images/k7.jpg" alt="Image 6"></li>
                     </ul>
                 </div>
-
                 <a href="#" class="jcarousel-control-prev"><span>&lsaquo;</v></a>
                 <a href="#" class="jcarousel-control-next"><span>&rsaquo;</span></a>
 
             </div>
+
+-->
+			<section class="examples -2u 8u">
+				<div class="carousel dissolve">
+					<div class="previews">
+			 			<div class="preview active"><img src="images/k1.jpg"></div>
+						<div class="preview"><img src="images/k2.jpg"></div>
+						<div class="preview"><img src="images/k3.jpg"></div>
+						<div class="preview"><img src="images/k4.jpg"></div>
+						<div class="preview"><img src="images/k5.jpg"></div>
+			 			<div class="preview"><img src="images/k6.jpg"></div>
+						<div class="preview"><img src="images/k7.jpg"></div>
+					</div>
+					<div class="controls">
+						<a class="next" data-action="next" href="#">›</a>
+						<a class="prev" data-action="prev" href="#">‹</a>
+			 			<div class="pages">
+				 			<a class="page active" data-page="0" href="#"></a>
+							<a class="page" data-page="1" href="#"></a>
+							<a class="page" data-page="2" href="#"></a>
+							<a class="page" data-page="3" href="#"></a>
+				 			<a class="page" data-page="4" href="#"></a>
+							<a class="page" data-page="5" href="#"></a>
+							<a class="page" data-page="6" href="#"></a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<hr>	
+		
 		<!-- Main -->
-			<div id="main" class="container">
+			<div id="main" class="container -2u 8u">
 				<!--sound cloud-->
 				<section style="margin-top:6em;text-align: center;">
 					<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/19938394&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
 				</section>		
+		<hr>	
 				<!--youtube-->
 				<section id="youtube">
 					<iframe src="https://www.youtube.com/embed/FCrHNJI8lnc" frameborder="0" allowfullscreen></iframe>

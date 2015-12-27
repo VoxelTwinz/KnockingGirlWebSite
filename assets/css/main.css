@@ -3678,23 +3678,36 @@ body {
   }
 }
 /* Nav */
-/* line 9, ../sass/layout/_youtube.scss */
+/*
+	#youtube {
+		 margin:0 auto; 
+		 margin-top:6em;
+		 text-align: center;
+		 iframe{
+		 	width:540px;
+		 	height: 315px;
+			@include breakpoint(small) {
+				width:100%;
+		 		height: 240px;
+			}
+		 }
+	}
+	*/
+/* line 24, ../sass/layout/_youtube.scss */
 #youtube {
-  margin: 0 auto;
-  margin-top: 6em;
-  text-align: center;
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 1em;
+  height: 0;
 }
-/* line 13, ../sass/layout/_youtube.scss */
+/* line 29, ../sass/layout/_youtube.scss */
 #youtube iframe {
-  width: 540px;
-  height: 315px;
-}
-@media screen and (max-width: 736px) {
-  /* line 13, ../sass/layout/_youtube.scss */
-  #youtube iframe {
-    width: 100%;
-    height: 240px;
-  }
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* Banner */
@@ -3953,7 +3966,7 @@ Main
 /* Footer */
 /* line 9, ../sass/layout/_footer.scss */
 #pre_footer {
-  padding: 4em 0;
+  padding: 0 0 4em 0;
 }
 /* line 11, ../sass/layout/_footer.scss */
 #pre_footer li {
