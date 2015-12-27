@@ -138,12 +138,14 @@
 	
 	hr {
 		border: 0;
-		margin: _size(element-margin) 0;
+		margin:(_size(element-margin)*1.5) 0;
 		background-image: url('images/hr.png');
-		background-size: 100% 100%;
+		background-size: 60% 60%;
+		background-repeat:  no-repeat;
+		background-position: center;
 		min-height: 10px;
 		&.major {
-			margin: (_size(element-margin) * 1.5) 0;
+			margin: (_size(element-margin) * 2.5) 0;
 		}
 	}
 

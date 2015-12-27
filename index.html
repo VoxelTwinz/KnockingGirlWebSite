@@ -120,34 +120,39 @@
 
             </div>
 		<!-- Main -->
-			<div id="main" class="container" style="padding-bottom:220px;">
+			<div id="main" class="container">
 				<!--sound cloud-->
-				
-
-				<section>
+				<section style="margin-top:6em;text-align: center;">
 					<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/19938394&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
 				</section>		
-
+				<!--youtube-->
+				<section id="youtube">
+					<iframe src="https://www.youtube.com/embed/FCrHNJI8lnc" frameborder="0" allowfullscreen></iframe>
+				</section>	
 			</div>
 
-		<!-- Footer 
-			<footer id="footer" class="deactive">
-				<div class="container">
-					<div class="row">
-						<div class="6u">
-							<a href=""><img src="images/Google-Play-Badge.png"></a>
-						</div>
-						<div class="6u">
-							<a href=""><img src="images/App_Store.png"></a>
-						</div>
-					</div>
+
+		<hr>	
+		<section id="pre_footer">		
+			<div class="container">
+				<div class="row">
+					<li class="-2u 4u">
+						 <a href="https://www.facebook.com/KnockingGirl/" target="_blank"><img src="images/footer_butten_fb.png"></a>
+					</li>
+					<li class="4u">
+						 <a href="http://www.voxel-twinz.tw/" target="_blank"><img src="images/footer_butten_vt.png"></a>
+					</li>
 				</div>
+			</div>
+		</section>	
+		<!-- Footer -->
+			<footer id="footer">
 				<div class="copyright">
 					<li>&copy; Knocking Girl. All rights reserved.</li>
 					<li>Design: <a href="http://www.voxel-twinz.tw">Voxel Twinz</a></li>
 				</div>
 			</footer>
-			-->
+			
 		<!-- Scripts -->
 		
 			<script src="assets/js/skel.min.js"></script>
@@ -184,10 +189,7 @@
 								range:		0.5,
 								anchor:		'top',
 								on:			function() {
-									if($footer.hasClass('active')){
-										$footer.removeClass('active'); 
-										$footer.addClass('deactive');
-									}
+									
 									if($header.hasClass('deactive')){
 										$header.removeClass('deactive'); 
 										$header.addClass('active');
@@ -199,10 +201,7 @@
 								},
 								off:		function() {
 									
-									if($footer.hasClass('deactive')){
-										$footer.removeClass('deactive'); 
-										$footer.addClass('active');
-									}
+									
 									if($header.hasClass('active')){
 										$header.removeClass('active'); 
 										$header.addClass('deactive');

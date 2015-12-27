@@ -2322,27 +2322,29 @@ pre code {
 /* line 139, ../sass/base/_typography.scss */
 hr {
   border: 0;
-  margin: 2em 0;
+  margin: 3em 0;
   background-image: url("images/hr.png");
-  background-size: 100% 100%;
+  background-size: 60% 60%;
+  background-repeat: no-repeat;
+  background-position: center;
   min-height: 10px;
 }
-/* line 145, ../sass/base/_typography.scss */
+/* line 147, ../sass/base/_typography.scss */
 hr.major {
-  margin: 3em 0;
+  margin: 5em 0;
 }
 
-/* line 151, ../sass/base/_typography.scss */
+/* line 153, ../sass/base/_typography.scss */
 .align-left {
   text-align: left;
 }
 
-/* line 155, ../sass/base/_typography.scss */
+/* line 157, ../sass/base/_typography.scss */
 .align-center {
   text-align: center;
 }
 
-/* line 159, ../sass/base/_typography.scss */
+/* line 161, ../sass/base/_typography.scss */
 .align-right {
   text-align: right;
 }
@@ -3675,12 +3677,32 @@ body {
     padding-top: 2em;
   }
 }
+/* Nav */
+/* line 9, ../sass/layout/_youtube.scss */
+#youtube {
+  margin: 0 auto;
+  margin-top: 6em;
+  text-align: center;
+}
+/* line 13, ../sass/layout/_youtube.scss */
+#youtube iframe {
+  width: 540px;
+  height: 315px;
+}
+@media screen and (max-width: 736px) {
+  /* line 13, ../sass/layout/_youtube.scss */
+  #youtube iframe {
+    width: 100%;
+    height: 315px;
+  }
+}
+
 /* Banner */
 /* line 9, ../sass/layout/_banner.scss */
 #banner {
   background: url("images/Logo_bg.png");
   background-size: 100% auto;
-  background-position: 50% 50%;
+  background-position: 50% 70%;
   background-repeat: no-repeat;
   padding: 8em 0px 2em;
   text-align: center;
@@ -3929,131 +3951,58 @@ Main
 }
 
 /* Footer */
-@-moz-keyframes footer-fadein {
-  0% {
-    bottom: -5em;
-  }
-  100% {
-    bottom: 0;
-  }
+/* line 9, ../sass/layout/_footer.scss */
+#pre_footer {
+  padding: 4em 0;
 }
-@-webkit-keyframes footer-fadein {
-  0% {
-    bottom: -5em;
-  }
-  100% {
-    bottom: 0;
-  }
+/* line 11, ../sass/layout/_footer.scss */
+#pre_footer li {
+  list-style-type: none;
 }
-@-o-keyframes footer-fadein {
-  0% {
-    bottom: -5em;
-  }
-  100% {
-    bottom: 0;
-  }
+/* line 14, ../sass/layout/_footer.scss */
+#pre_footer a {
+  margin: 0 auto;
+  text-align: center;
 }
-@-ms-keyframes footer-fadein {
-  0% {
-    bottom: -5em;
-  }
-  100% {
-    bottom: 0;
-  }
+/* line 18, ../sass/layout/_footer.scss */
+#pre_footer a img {
+  display: block;
+  margin: 0 auto;
+  max-width: 180px;
 }
-@keyframes footer-fadein {
-  0% {
-    bottom: -5em;
-  }
-  100% {
-    bottom: 0;
-  }
-}
-@-moz-keyframes footer-fadeout {
-  0% {
-    bottom: 0;
-  }
-  100% {
-    bottom: -10em;
-  }
-}
-@-webkit-keyframes footer-fadeout {
-  0% {
-    bottom: 0;
-  }
-  100% {
-    bottom: -10em;
-  }
-}
-@-o-keyframes footer-fadeout {
-  0% {
-    bottom: 0;
-  }
-  100% {
-    bottom: -10em;
-  }
-}
-@-ms-keyframes footer-fadeout {
-  0% {
-    bottom: 0;
-  }
-  100% {
-    bottom: -10em;
-  }
-}
-@keyframes footer-fadeout {
-  0% {
-    bottom: 0;
-  }
-  100% {
-    bottom: -10em;
-  }
-}
-/* line 20, ../sass/layout/_footer.scss */
+
+/* line 27, ../sass/layout/_footer.scss */
 #footer {
-  position: fixed;
   width: 100%;
   padding: 2em 2em 0 2em;
   background-image: url("images/footer-bg.png");
   background-size: auto 100%;
   background-repeat: repeat-x;
 }
-/* line 24, ../sass/layout/_footer.scss */
-#footer.active {
-  -moz-animation: footer-fadein 1s;
-  -webkit-animation: footer-fadein 1s;
-  -ms-animation: footer-fadein 1s;
-  animation: footer-fadein 1s;
-  bottom: 0px;
+/* line 35, ../sass/layout/_footer.scss */
+#footer li {
+  list-style-type: none;
 }
-/* line 30, ../sass/layout/_footer.scss */
-#footer.deactive {
-  -moz-animation: footer-fadeout 1s;
-  -webkit-animation: footer-fadeout 1s;
-  -ms-animation: footer-fadeout 1s;
-  animation: footer-fadeout 1s;
-  bottom: -10em;
-}
-/* line 40, ../sass/layout/_footer.scss */
+/* line 38, ../sass/layout/_footer.scss */
 #footer a {
   margin: 0 auto;
   text-align: center;
 }
-/* line 44, ../sass/layout/_footer.scss */
+/* line 42, ../sass/layout/_footer.scss */
 #footer a img {
   display: block;
   margin: 0 auto;
   max-width: 180px;
 }
-/* line 51, ../sass/layout/_footer.scss */
+/* line 49, ../sass/layout/_footer.scss */
 #footer .copyright {
   color: #663607;
   font-size: 0.9em;
   padding: 0;
   text-align: center;
-  margin-bottom: 2.5em;
+  padding-bottom: 2em;
 }
-/* line 59, ../sass/layout/_footer.scss */
+/* line 56, ../sass/layout/_footer.scss */
 #footer .copyright li {
   border-left: solid 1px rgba(144, 144, 144, 0.25);
   display: inline-block;
@@ -4061,19 +4010,19 @@ Main
   margin-left: 1.5em;
   padding-left: 1.5em;
 }
-/* line 66, ../sass/layout/_footer.scss */
+/* line 63, ../sass/layout/_footer.scss */
 #footer .copyright li:first-child {
   border-left: 0;
   margin-left: 0;
   padding-left: 0;
 }
 @media screen and (max-width: 980px) {
-  /* line 76, ../sass/layout/_footer.scss */
+  /* line 73, ../sass/layout/_footer.scss */
   #footer a {
     margin: 0 auto;
     text-align: center;
   }
-  /* line 79, ../sass/layout/_footer.scss */
+  /* line 76, ../sass/layout/_footer.scss */
   #footer a img {
     display: block;
     margin: 0 auto;
@@ -4081,22 +4030,22 @@ Main
   }
 }
 @media screen and (max-width: 736px) {
-  /* line 89, ../sass/layout/_footer.scss */
+  /* line 86, ../sass/layout/_footer.scss */
   #footer a {
     margin: 0 auto;
     text-align: center;
   }
-  /* line 92, ../sass/layout/_footer.scss */
+  /* line 89, ../sass/layout/_footer.scss */
   #footer a img {
     display: block;
     margin: 0 auto;
     max-width: 120px;
   }
-  /* line 98, ../sass/layout/_footer.scss */
+  /* line 95, ../sass/layout/_footer.scss */
   #footer .copyright {
     margin-bottom: 1em;
   }
-  /* line 100, ../sass/layout/_footer.scss */
+  /* line 97, ../sass/layout/_footer.scss */
   #footer .copyright li {
     display: block;
     border-left: 0;

@@ -1,0 +1,21 @@
+// skel-baseline v3.0.0 | (c) n33 | skel.io | MIT licensed
+
+@import '../libs/vars';
+@import '../libs/functions';
+@import '../libs/mixins';
+
+/* Nav */
+
+	#youtube {
+		 margin:0 auto; 
+		 margin-top:6em;
+		 text-align: center;
+		 iframe{
+		 	width:540px;
+		 	height: 315px;
+			@include breakpoint(small) {
+				width:100%;
+		 		height: 240px;
+			}
+		 }
+	}
