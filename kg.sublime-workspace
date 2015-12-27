@@ -1,1 +1,405 @@
-{}
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"div",
+				"div	Tag"
+			],
+			[
+				"se",
+				"section	Tag"
+			],
+			[
+				"h",
+				"h4	Tag"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"st",
+				"style	Attr"
+			],
+			[
+				"s",
+				"style	Attr"
+			],
+			[
+				"pa",
+				"padding-bottom"
+			],
+			[
+				"hi",
+				"height"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"ba",
+				"background-size"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "assets/sass/layout/_press.scss",
+			"settings":
+			{
+				"buffer_size": 471,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "press.html",
+			"settings":
+			{
+				"buffer_size": 8667,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 7246,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print('Please restart Sublime Text to finish installation')"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/Github/KnockingGirlWebSite",
+		"/D/Github/KnockingGirlWebSite/assets",
+		"/D/Github/KnockingGirlWebSite/assets/css",
+		"/D/Github/KnockingGirlWebSite/assets/sass",
+		"/D/Github/KnockingGirlWebSite/assets/sass/components",
+		"/D/Github/KnockingGirlWebSite/assets/sass/layout"
+	],
+	"file_history":
+	[
+		"/D/Github/KnockingGirlWebSite/assets/sass/main.scss",
+		"/D/Github/KnockingGirlWebSite/index.html",
+		"/D/Github/KnockingGirlWebSite/element.html",
+		"/D/Github/KnockingGirlWebSite/assets/sass/layout/_banner.scss",
+		"/D/Github/OfficialWebsite/presskit.html",
+		"/E/UnderTheBed/UnderTheBed_eBook_V2/UnderTheBed_eBook/Assets/Script/UI_Controller.cs",
+		"/E/UnderTheBed/UnderTheBed_eBook_V2/UnderTheBed_eBook/Assets/Script/TitleControl.cs",
+		"/C/Users/zetsu/Desktop/FarSmoke.cs",
+		"/D/Program Files (x86)/MapleStory2/Data/Shaders/PreGenerated/NiDirShadowWriteMat_ps_3_0_DX9.cache",
+		"/C/Users/zetsu/Desktop/雲端問卷.html",
+		"/D/Program Files (x86)/MapleStory2/locales/en-US.pak",
+		"/C/Users/zetsu/Desktop/Cyber_web/download.html.erb",
+		"/E/Work/2015.6 作品集/田曜銜 - 美術作品集 2015.7.html",
+		"/F/zetsu/Downloads/download.html",
+		"/F/zetsu/Downloads/index.html",
+		"/G/Cybernetics/Web/Web_Showreel/Assets/AI_Controller.cs",
+		"/G/Work/大三上/Snake Web/Snake.html",
+		"/F/zetsu/Downloads/showreel.html",
+		"/C/Users/zetsu/Desktop/Cyber_web/_head.html.erb",
+		"/C/Users/zetsu/Desktop/Cyber_web/_menu.html.erb",
+		"/C/Users/zetsu/Desktop/Cyber_web/_footer.html.erb",
+		"/C/Users/zetsu/Desktop/Cyber_web/spotlight.html.erb",
+		"/F/zetsu/Downloads/spotlight.html",
+		"/F/zetsu/Downloads/coming.html",
+		"/G/Cybernetics/募資內文/廣告/蓋台/stylesheets/style.css",
+		"/C/Users/zetsu/Documents/xforce_Krakatoa.lic",
+		"/C/Users/zetsu/Desktop/形象片/thinkbox.lic",
+		"/C/Users/zetsu/Desktop/形象片/FMK.ThinkBox Krakatoa MX 2.2.0.51807 for 3ds Max 2012 - 2014 - Win64/lic/thinkbox.lic",
+		"/C/Users/zetsu/Desktop/形象片/FMK.ThinkBox Krakatoa MX 2.2.0.51807 for 3ds Max 2012 - 2014 - Win64/lic/thinkbox - 複製.lic",
+		"/F/zetsu/Downloads/3DS Max ink drop tutorial - FumeFX, Krakatoa and After Effects/Sitni Sati FumeFX 3.5.1 x32x64 for Max 2012-2014 Win/Install Info!!.txt",
+		"/G/Cybernetics/募資內文/廣告/蓋台/index.html",
+		"/F/zetsu/Downloads/style (2).css",
+		"/F/zetsu/Downloads/style (1).css",
+		"/C/Users/zetsu/Desktop/Cyber_web/sass/style.scss",
+		"/C/Users/zetsu/Desktop/Cyber_webbbbbbb/sass/style.scss",
+		"/F/zetsu/Downloads/spotlight (1).html",
+		"/C/Users/zetsu/Desktop/Cyber_web/sass/styleasdasd.scss",
+		"/C/Users/zetsu/Desktop/Cyber_web/index.html.erb",
+		"/C/Users/zetsu/Desktop/Cyber_webddddd/spotlight.html.erb",
+		"/C/Users/zetsu/Desktop/Cyber_webddddd/sass/style.scss",
+		"/C/Users/zetsu/Desktop/Cyber_webddddd/indexfffff.html.erb",
+		"/C/Users/zetsu/Desktop/Cyber_webddddd/_menu.html.erb",
+		"/C/Users/zetsu/Desktop/Cyber_webddddd/_footer.html.erb",
+		"/C/Users/zetsu/Desktop/Cyber_web/stylesheets/style.css",
+		"/F/zetsu/Downloads/htaccess",
+		"/F/zetsu/Downloads/GoogleAnalytics.js",
+		"/F/zetsu/Downloads/style.css",
+		"/C/xampp/php/php.ini",
+		"/C/xampp/apache/conf/httpd.conf",
+		"/C/xampp/Title_WebGL/Data_qweqwr/UnityProgress.js",
+		"/C/xampp/Title_WebGL/Data_qweqwr/fileloader.js",
+		"/C/xampp/Title_WebGL/Data_qweqwr/Title_WebGL.html.mem",
+		"/C/xampp/Title_WebGL/Data_qweqwr/style.css",
+		"/C/xampp/Title_WebGL/Data_qweqwr/UnityConfig.js",
+		"/F/zetsu/Downloads/Ftp sableangle@cybernetics-game.com.xml",
+		"/F/zetsu/Downloads/google465a6277219d9d2a.html",
+		"/C/Users/zetsu/Desktop/index.html",
+		"/C/xampp/Title_WebGL/Data_qweqwr/loadingbar.png"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"last-child",
+			"jpg",
+			"png",
+			"margin",
+			"anim",
+			"wrapper",
+			"../images/",
+			"UI_Title_BK",
+			"Flow",
+			"images",
+			"animation",
+			"animatedBackground_BK",
+			"animation",
+			"header",
+			"icon",
+			"image",
+			"land",
+			"dot.pn",
+			"_BK.pn",
+			"_BK",
+			"png"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "assets/sass/layout/_press.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 471,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								294,
+								277
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "press.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8667,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								139,
+								139
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 4192.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7246,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5025,
+								5025
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1991.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "kg.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
