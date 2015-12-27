@@ -7,10 +7,15 @@
 /* Banner */
 
 	#banner {
-		@include padding(8em, 0);
-		background: transparent;
+
+		background: url('images/Logo_bg.png');
+		background-size: 100% auto;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+
+		padding: 8em 0px 2em;
 		text-align: center;
-		img{
+		#main-logo{
 			max-width: 960px;
 			width:60%;
 			opacity: 1;

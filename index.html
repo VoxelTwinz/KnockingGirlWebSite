@@ -9,8 +9,12 @@
 		<link rel="shortcut icon" href="images/icon.ico"> 
 
 		<link rel="stylesheet" href="assets/css/main.css" />
-		
+
+		<link rel="stylesheet" href="assets/css/jcarousel.responsive.css" />
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript" src="assets/js/jquery.jcarousel.min.js"></script>
+		<script type="text/javascript" src="assets/js/jcarousel.responsive.js"></script>
+
 		<!-- Slider -->
 		<script src="assets/js/jquery.scrollgress.min.js"></script>
 		<script type="text/javascript">
@@ -31,9 +35,13 @@
 		</header>
 
 		
+
+
+
 		<!-- Banner -->
+		<div id="title">
 			<section id="banner">
-				<img src="images/Logo.png">
+				<img id="main-logo" src="images/Logo.png">
 				<!--
 				<ul class="actions">
 					<li><a href="#content" class="button special">Content</a></li>
@@ -41,7 +49,24 @@
 					<li><a href="#grid" class="button alt">Grid System</a></li>
 				</ul>
 				-->
+			
+
 			</section>
+			
+			<section id="subtitle">
+				<img src="images/subtitle_icon.png">
+				<div class="row">
+					<li class="-3u 3u -2u(small) 4u(small)">
+						<a href="https://play.google.com/store/apps/details?id=com.cloudmacaca.KnockingGirl"><img src="images/store_google.png"></a>
+					</li>
+					<li class="3u 4u(small)">
+						<a href="https://www.microsoft.com/zh-tw/store/games/knocking-girl/9nblggh08625"><img src="images/store_wp.png"></a>
+						
+					</li>
+				</div>
+			</section>
+		</div>	
+
 			<section id="award">
 				<div class="row">
 						<li class="2u 3u(medium) 6u(small) 12u(xsmall)">
@@ -66,10 +91,27 @@
 			</section>
 			<hr>
 
+
+			<div class="jcarousel-wrapper">
+                <div class="jcarousel">
+                    <ul>
+                        <li><img src="images/k1.jpg" alt="Image 1"></li>
+                        <li><img src="images/k2.jpg" alt="Image 2"></li>
+                        <li><img src="images/k3.jpg" alt="Image 3"></li>
+                        <li><img src="images/k4.jpg" alt="Image 4"></li>
+                        <li><img src="images/k5.jpg" alt="Image 5"></li>
+                        <li><img src="images/k6.jpg" alt="Image 6"></li>
+                        <li><img src="images/k7.jpg" alt="Image 6"></li>
+                    </ul>
+                </div>
+
+                <a href="#" class="jcarousel-control-prev"><span>&lsaquo;</v></a>
+                <a href="#" class="jcarousel-control-next"><span>&rsaquo;</span></a>
+
+            </div>
 		<!-- Main -->
 			<div id="main" class="container" style="padding-bottom:220px;">
 				<!--sound cloud-->
-				<label>testtt</label>
 				
 
 				<section>
@@ -78,7 +120,7 @@
 
 			</div>
 
-		<!-- Footer -->
+		<!-- Footer 
 			<footer id="footer" class="deactive">
 				<div class="container">
 					<div class="row">
@@ -95,7 +137,7 @@
 					<li>Design: <a href="http://www.voxel-twinz.tw">Voxel Twinz</a></li>
 				</div>
 			</footer>
-
+			-->
 		<!-- Scripts -->
 		
 			<script src="assets/js/skel.min.js"></script>
@@ -105,7 +147,7 @@
 
 					var $window = $(window);
 					var $footer = $('#footer');
-					var $banner = $('#banner');
+					var $banner = $('#title');
 					var $header = $('#header');
 					var $t_r = $('#t-r');
 					var $t_l = $('#t-l');

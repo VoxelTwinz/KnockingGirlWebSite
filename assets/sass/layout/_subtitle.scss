@@ -1,0 +1,45 @@
+// skel-baseline v3.0.0 | (c) n33 | skel.io | MIT licensed
+
+@import '../libs/vars';
+@import '../libs/functions';
+@import '../libs/mixins';
+
+/* Nav */
+
+	#subtitle {
+		text-align: center;
+		background: url('images/subtitle_bg.png');
+		background-size: 100% auto;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		height: 100%;
+		padding-bottom:6em; 
+		padding-top:2em; 
+		img{
+			margin: 0 auto;
+			width: 40%;
+
+		}
+		li{
+			list-style-type: none;
+			img{
+				margin: 0 auto;
+				width: 80%;
+			}
+		}
+
+	}
+
+	@include breakpoint(small) {
+		#subtitle {
+			img{
+				margin: 0 auto;
+				width: 60%;
+
+			}
+			li{
+				padding-top:2em;
+			}
+		}
+
+	}

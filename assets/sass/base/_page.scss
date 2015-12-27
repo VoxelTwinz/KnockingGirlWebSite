@@ -14,11 +14,11 @@
 				@include vendor('animation', 'spinner-show 1.5s 1 0.25s ease forwards, spinner-hide 0.25s ease-in-out forwards !important');
 				@include vendor('transform-origin', '50% 50%');
 				color: _palette(fg-loading); 
-				content: '\f1ce';
+				content: url("images/Loading.png");
 				cursor: default;
 				display: block;
 				font-size: 5em;
-				height: 2em;
+				height: 120px;
 				left: 50%; 
 				line-height: 2em;
 				margin: -1em 0 0 -1em;
@@ -52,7 +52,7 @@
 			// Spinner (active)
 
 				&:before {
-					@include vendor('animation', 'spinner-show 1.5s 1 0.25s ease forwards, spinner-rotate 0.75s infinite linear !important');
+					@include vendor('animation', 'spinner-show 1.5s 1 0.25s ease forwards, spinner-rotate 4s infinite linear !important');
 					z-index: $zindex-loader-overlay + 1;
 				}
 
