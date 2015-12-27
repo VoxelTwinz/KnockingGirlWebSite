@@ -4084,6 +4084,7 @@ Main
 }
 /* line 34, ../sass/layout/_press.scss */
 #press img {
+  max-width: 100%;
   text-align: center;
   margin: 0 auto;
   display: block;
