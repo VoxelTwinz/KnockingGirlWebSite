@@ -10,11 +10,32 @@
 		text-align: center;
 		background: url('images/subtitle_bg.png');
 		background-size: 100% auto;
-		background-position: 50% 50%;
+		background-position: 0 10em;
 		background-repeat: no-repeat;
 		height: 100%;
 		padding-bottom:6em; 
-		padding-top:2em; 
+		padding-top:6em; 
+		img{
+			margin: 0 auto;
+			width: 40%;
+
+		}
+		li{
+			list-style-type: none;
+			img{
+				margin: 0 auto;
+				width: 80%;
+			}
+		}
+
+	}
+
+	#subtitle2 {
+		text-align: center;
+		height: 100%;
+		padding-bottom:6em; 
+		padding-top:0em; 
+		margin: -5em 0 0 0;
 		img{
 			margin: 0 auto;
 			width: 40%;
@@ -32,6 +53,17 @@
 
 	@include breakpoint(small) {
 		#subtitle {
+			img{
+				margin: 0 auto;
+				width: 60%;
+
+			}
+			li{
+				padding-top:6em;
+			}
+		}
+
+		#subtitle2 {
 			img{
 				margin: 0 auto;
 				width: 60%;

@@ -7,6 +7,7 @@
 /* skel-baseline v3.0.0 | (c) n33 | skel.io | MIT licensed */
 
 	@include skel-breakpoints((
+		FHD: '(max-width: 1920px)',
 		xlarge: '(max-width: 1680px)',
 		large: '(max-width: 1280px)',
 		medium: '(max-width: 980px)',

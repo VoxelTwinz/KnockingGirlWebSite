@@ -10,10 +10,10 @@
 
 		background: url('images/Logo_bg.png');
 		background-size: 100% auto;
-		background-position: 50% 70%;
+		background-position: 50% 75%;
 		background-repeat: no-repeat;
 
-		padding: 8em 0px 2em;
+		padding: 8em 0px 0em; 
 		text-align: center;
 		#main-logo{
 			max-width: 960px;
@@ -61,6 +61,8 @@
 		}
 
 		@include breakpoint(small) {
+
+			background-position: 50% 85%;
 			img{
 				width: 90%;
 			}

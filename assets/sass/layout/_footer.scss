@@ -18,8 +18,19 @@
 			img{
 				display: block;
 				margin: 0 auto;
-				max-width: 180px;
+				max-width: 15em;
+				padding: 2em 0 0 0;
 			}
+		}
+		@include breakpoint(medium) {
+			a{
+				img{
+					display: block;
+					margin: 0 auto;
+					max-width: 10em;
+					padding: 2em 0 0 0;
+			}
+		}
 		}
 	}
 
