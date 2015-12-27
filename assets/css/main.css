@@ -3693,7 +3693,7 @@ body {
   /* line 13, ../sass/layout/_youtube.scss */
   #youtube iframe {
     width: 100%;
-    height: 315px;
+    height: 240px;
   }
 }
 
@@ -3874,21 +3874,21 @@ body {
   margin-bottom: 1.75em;
 }
 @media screen and (max-width: 1280px) {
-  /* line 54, ../sass/layout/_banner.scss */
+  /* line 55, ../sass/layout/_banner.scss */
   #banner h2 {
     font-size: 3.5em;
   }
 }
 @media screen and (max-width: 736px) {
-  /* line 63, ../sass/layout/_banner.scss */
+  /* line 64, ../sass/layout/_banner.scss */
   #banner img {
     width: 90%;
   }
-  /* line 67, ../sass/layout/_banner.scss */
+  /* line 68, ../sass/layout/_banner.scss */
   #banner h2 {
     font-size: 2.25em;
   }
-  /* line 71, ../sass/layout/_banner.scss */
+  /* line 72, ../sass/layout/_banner.scss */
   #banner p {
     font-size: 1.25em;
   }
@@ -4052,4 +4052,26 @@ Main
     margin-left: 0;
     padding-left: 0;
   }
+}
+
+/* Nav */
+/* line 12, ../sass/layout/_press.scss */
+#presscontent section {
+  margin-top: 6em;
+  text-align: center;
+}
+/* line 18, ../sass/layout/_press.scss */
+#presscontent section table tr td:last-child {
+  text-align: left;
+}
+
+/* line 29, ../sass/layout/_press.scss */
+#press section.space {
+  padding: 1em 0;
+}
+/* line 34, ../sass/layout/_press.scss */
+#press img {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
 }
