@@ -3885,12 +3885,37 @@ body {
   padding: 0 5em;
 }
 /* line 17, ../sass/layout/_award.scss */
+#award .pics {
+  display: none;
+  height: 110px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+/* line 23, ../sass/layout/_award.scss */
+#award .pics img {
+  margin: 0 auto;
+  height: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* line 30, ../sass/layout/_award.scss */
 #award li {
   list-style-type: none;
 }
-/* line 19, ../sass/layout/_award.scss */
+/* line 32, ../sass/layout/_award.scss */
 #award li img {
   width: 100%;
+}
+@media screen and (max-width: 736px) {
+  /* line 47, ../sass/layout/_award.scss */
+  #award .row {
+    display: none;
+  }
+  /* line 50, ../sass/layout/_award.scss */
+  #award .pics {
+    display: block;
+  }
 }
 
 /* line 7, ../sass/layout/_main.scss */
