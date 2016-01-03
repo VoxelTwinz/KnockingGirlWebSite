@@ -3514,30 +3514,28 @@ body {
   -ms-animation: top-border-fadeout-l 2s;
   animation: top-border-fadeout-l 2s;
   left: -10em;
-  top: -10em;
 }
-/* line 61, ../sass/layout/_header.scss */
+/* line 60, ../sass/layout/_header.scss */
 #header #t-r {
   text-align: right;
   position: relative;
 }
-/* line 62, ../sass/layout/_header.scss */
+/* line 61, ../sass/layout/_header.scss */
 #header #t-r.active {
   -moz-animation: top-border-fadein-r 2s;
   -webkit-animation: top-border-fadein-r 2s;
   -ms-animation: top-border-fadein-r 2s;
   animation: top-border-fadein-r 2s;
 }
-/* line 65, ../sass/layout/_header.scss */
+/* line 64, ../sass/layout/_header.scss */
 #header #t-r.deactive {
   -moz-animation: top-border-fadeout-r 2s;
   -webkit-animation: top-border-fadeout-r 2s;
   -ms-animation: top-border-fadeout-r 2s;
   animation: top-border-fadeout-r 2s;
   right: -10em;
-  top: -10em;
 }
-/* line 70, ../sass/layout/_header.scss */
+/* line 68, ../sass/layout/_header.scss */
 #header #t-r img {
   -moz-transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
