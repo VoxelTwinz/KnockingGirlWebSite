@@ -19,12 +19,6 @@
 			});
 		</script>
 
-		<!-- 
-		<link rel="stylesheet" href="assets/css/jcarousel.responsive.css" />
-		<script type="text/javascript" src="assets/js/jquery.jcarousel.min.js"></script>
-		<script type="text/javascript" src="assets/js/jcarousel.responsive.js"></script>
-		 -->
-
 		<!-- Slider -->
    		<link href="assets/css/jquery.carousel.css" rel="stylesheet" type="text/css">
 		<script src="assets/js/jquery.carousel.js" type="text/javascript"></script>
@@ -48,13 +42,6 @@
 		<div id="title">
 			<section id="banner">
 				<img id="main-logo" src="images/Logo.png">
-				<!--
-				<ul class="actions">
-					<li><a href="#content" class="button special">Content</a></li>
-					<li><a href="#elements" class="button">Elements</a></li>
-					<li><a href="#grid" class="button alt">Grid System</a></li>
-				</ul>
-				-->
 			
 
 			</section>
@@ -109,25 +96,6 @@
 
 			<hr>
 
-<!-- 
-			<div class="jcarousel-wrapper">
-                <div class="jcarousel">
-                    <ul>
-                        <li><img src="images/k1.jpg" alt="Image 1"></li>
-                        <li><img src="images/k2.jpg" alt="Image 2"></li>
-                        <li><img src="images/k3.jpg" alt="Image 3"></li>
-                        <li><img src="images/k4.jpg" alt="Image 4"></li>
-                        <li><img src="images/k5.jpg" alt="Image 5"></li>
-                        <li><img src="images/k6.jpg" alt="Image 6"></li>
-                        <li><img src="images/k7.jpg" alt="Image 6"></li>
-                    </ul>
-                </div>
-                <a href="#" class="jcarousel-control-prev"><span>&lsaquo;</v></a>
-                <a href="#" class="jcarousel-control-next"><span>&rsaquo;</span></a>
-
-            </div>
-
--->
 			<section class="-3u 6u -1u(xsmall) 10u(xsmall) -2u(small) 8u(small)">
 				<div class="carousel dissolve">
 					<div class="previews">
@@ -201,66 +169,9 @@
 		
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/init.js"></script>
+
 			<script type="text/javascript" src="assets/js/jquery.ba-cond.min.js"></script>
-			<script type="text/javascript">
 
-					var $window = $(window);
-					var $footer = $('#footer');
-					var $banner = $('#title');
-					var $header = $('#header');
-					var $t_r = $('#t-r');
-					var $t_l = $('#t-l');
-					var $body = $('body');
-
-
-					// Disable animations/transitions until the page has loaded.
-					
-						
-					
-
-					// Header.
-					// If the header is using "alt" styling and #banner is present, use scrollwatch
-					// to revert it back to normal styling once the user scrolls past the banner.
-					// Note: This is disabled on mobile devices.
-
-					$window.on('load', function() {
-						
-							window.setTimeout(function() {
-												$body.removeClass('is_loading');
-							}, 0);
-							$banner.scrollwatch({
-								delay:		0,
-								range:		0.5,
-								anchor:		'top',
-								on:			function() {
-									
-									if($header.hasClass('deactive')){
-										$header.removeClass('deactive'); 
-										$header.addClass('active');
-										$t_r.removeClass('deactive'); 
-										$t_r.addClass('active');
-										$t_l.removeClass('deactive'); 
-										$t_l.addClass('active');
-									}
-								},
-								off:		function() {
-									
-									
-									if($header.hasClass('active')){
-										$header.removeClass('active'); 
-										$header.addClass('deactive');
-										$t_r.removeClass('active'); 
-										$t_r.addClass('deactive');
-										$t_l.removeClass('active'); 
-										$t_l.addClass('deactive');
-									}
-								}
-							});	
-
-					});
-
- 				$('.pics').cycle('fade');
- 			
-		</script>
 	</body>
 </html>
