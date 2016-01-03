@@ -54,7 +54,6 @@
 			&.deactive{
 				@include vendor('animation', 'top-border-fadeout-l 2s');	
 				left:-10em;
-				top:-10em;
 			}
 			position: relative;
 		}
@@ -65,7 +64,6 @@
 			&.deactive{
 				@include vendor('animation', 'top-border-fadeout-r 2s');	
 				right:-10em;
-				top:-10em;
 			}
 			img{
 				@include vendor('transform', 'scaleX(-1)');
